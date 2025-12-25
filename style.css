@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --bg: #fdfbf7;
+    --text: #111;
+    --border: #111;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace; /*"Times New Roman", serif*/
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.nav {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 32px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    color: var(--text);
+  }
+  
+  .links a {
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+
+.center {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.name {
+  font-size: 48px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.about {
+  max-width: 600px;
+  font-size: 16px;
+}
+
+.about p {
+  margin-bottom: 16px;
+}
+
+.current span {
+  font-weight: bold;
+}
+
+.page {
+  padding: 60px 40px;
+  max-width: 700px;
+}
+
+.page h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.item {
+  margin-bottom: 24px;
+}
+
+.links {
+  list-style: none;
+  margin-top: 24px;
+}
+
+.links li {
+  margin-bottom: 12px;
+}
+
+.links a {
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid #111;
+}
+
+.links a:hover {
+  opacity: 0.7;
+}
+
+.paper {
+    opacity: 0;
+    animation: paperOpen 0.6s ease-out forwards;
+  }
+  
+  @keyframes paperOpen {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .text-appear {
+    opacity: 0;
+    animation: textFade 0.7s ease forwards;
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes textFade {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  body.dark {
+    --bg: #111;
+    --text: #fdfbf7;
+    --border: #fdfbf7;
+  }
+
+  #theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  #theme-toggle:hover {
+    opacity: 0.7;
+  }
+
+.links a,
+.links a:link,
+.links a:visited {
+  color: var(--text);
+}
+
+.experience-bullets {
+    list-style: disc;           /* normal bullet */
+    padding-left: 1.2em;        /* space for the bullet */
+    margin: 8px 0 16px 0;       /* spacing above/below the list */
+  }
+  
+  .experience-bullets li {
+    text-indent: -0.5em;        /* pulls first line back a bit */
+    padding-left: 0.5em;        /* keeps subsequent lines aligned */
+    line-height: 1.6;
+  }
+
+  .status {
+    font-size: 0.8em;
+    color: #ff6600;  /* or something bright for visibility */
+    font-weight: bold;
+    margin-left: 8px;
+  }
+  
