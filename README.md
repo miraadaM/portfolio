@@ -17,8 +17,7 @@ This is portfolio website showcasing my projects, experience, and work.
 
 ## 💡 Inspiration
 
-- Smooth fade-in animations:
-- Light/Dark theme toggle:
+- Smooth fade-in animations and Light/Dark theme toggle: https://www.reaganhsu.com
 - Minimalist, content-focused layout:
 
 ---
