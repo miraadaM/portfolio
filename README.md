@@ -1,4 +1,4 @@
-# 🌟 Mirada Makhmutova Portfolio
+# 🌟 Portfolio
 
 This is portfolio website showcasing my projects, experience, and work.  
 
